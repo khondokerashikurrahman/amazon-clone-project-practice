@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Card</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="amzon.css">
+</head>
+<body>
+    
+    <!-- TOP NAVBAR -->
+    <div class="top-nav py-2">
+        <div class="container-fluid">
+            <div class="row align-items-center g-2">
+
+                <div class="col-6 col-md-2 text-center text-md-start">
+                    <img src="images/logo.webp" class="img-fluid" style="width:80px;height:35px;" alt="logo">
+                </div>
+
+                <div class="col-12 col-md-7">
+                    <div class="input-group ">
+
+                        <button class="btn btn-light dropdown-toggle bg-secondary" data-bs-toggle="dropdown">
+                            Deals
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.amazon.com/s?k=echo+show+8&i=electronics-intl-ship&crid=C7UXMDYIQZF2&sprefix=e%2Celectronics-intl-ship%2C340&ref=nb_sb_ss_p13n-expert-pd-ops-ranker_2_1" target="_blank">Electronics</a></li>
+                            <li><a class="dropdown-item" href="https://www.amazon.com/s?k=t+-shirts&i=fashion-boys-intl-ship&crid=1YZC04EJ9LHH6&sprefix=sh%2Cfashion-boys-intl-ship%2C330&ref=nb_sb_ss_p13n-expert-pd-ops-ranker_1_2" target="_blank">Boy's Fashion</a></li>
+                            <li><a class="dropdown-item" href="https://www.amazon.com/s?k=harry+potter&i=stripbooks-intl-ship&crid=2VA19NQJWWDMM&sprefix=harr%2Cstripbooks-intl-ship%2C341&ref=nb_sb_ss_p13n-expert-pd-ops-ranker_1_4" target="_blank">Books</a></li>
+                            <li><a class="dropdown-item" href="https://www.amazon.com/s?k=pant+shirt&i=fashion-girls-intl-ship&crid=1CX5J8QX4V5SK&sprefix=pant+shirt%2Cfashion-girls-intl-ship%2C360&ref=nb_sb_noss_2" target="_blank">Women's Fashion</a></li>
+                            <li><a class="dropdown-item" href="https://www.amazon.com/s?k=kitchen+gadgets&i=kitchen-intl-ship&crid=1TLXLI0BQ8HU8&sprefix=ki%2Ckitchen-intl-ship%2C338&ref=nb_sb_ss_p13n-expert-pd-ops-ranker_2_2" target="_blank">Home & Kitchen</a></li>
+                        </ul>
+
+                        <input type="text" class="form-control" placeholder="Search Amazon">
+
+                        <button class="btn search-btn">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 text-end text-white">
+                    <small class="fw-bold">
+                         <a href="contact.html" class="text-white text-decoration-none" target="_blank">Hello, Sign in</a>
+                    </small>
+                    <a href="#" class="bi bi-cart3 fs-4 " data-bs-toggle="offcanvas" data-bs-target="#menuCanvas"></a>
+                
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU BAR -->
+    <div class="menu-bar py-2">
+        <div class="container-fluid d-flex gap-3 overflow-auto">
+
+            <a href="#" class="text-white text-decoration-none" data-bs-toggle="offcanvas" data-bs-target="#menuCanvas">
+                ☰ All
+            </a>
+
+            <a href="amazon.html" target="_blank" class="text-white text-decoration-none">Today's Deals</a>
+            <a href="gift_card.html" class="text-white text-decoration-none">Gift Cards</a>
+            <a href="#" class="text-white text-decoration-none">Prime Video</a>
+            <a href="#" class="text-white text-decoration-none">Customer Service</a>
+            <a href="#" class="text-white text-decoration-none">Sell</a>
+            <a href="contact.html" class="text-white text-decoration-none">Registry</a>
+
+        </div>
+    </div>
+
+    <!-- menu footer -->
+    <div class="menu-footer  py-2">
+        <div class="container-fluid  d-flex gap-1 overflow-auto">
+            <span class="">Today's Deals</span>
+            <span class="">Coupons</span>
+            <span class="">Renewd Deals</span>
+            <span class="">Outlet</span>
+            <span class="">Amazon Resale</span>
+        </div>
+    </div>
+
+    <!-- CATEGORY BUTTONS -->
+    <div class="container-fluid py-3 bg-light opacity-65%">
+
+        <div id="dealSlider" class="carousel slide">
+
+            <div class="carousel-inner">
+
+                <div class="col-12 col-md-12 col-sm-12 carousel-item active text-center">
+                    <button class="btn btn-outline-dark m-1">Lightning Deals</button>
+                    <button class="btn btn-outline-dark m-1">Most Loved</button>
+                    <button class="btn btn-outline-dark m-1">Electronics</button>
+                    <button class="btn btn-outline-dark m-1">Outle</button>
+                    <button class="btn btn-outline-dark m-1">Lowest price 365 days</button>
+                    <button class="btn btn-outline-dark m-1">Premium Brands</button>
+                    <button class="btn btn-outline-dark m-1">Final Sale</button>
+                    <button class="btn btn-outline-dark m-1">Fashion</button>
+                </div>
+
+                <div class="carousel-item text-center">
+                    <button class="btn btn-outline-dark m-1">Beauty</button>
+                    <button class="btn btn-outline-dark m-1">Toys & Games</button>
+                    <button class="btn btn-outline-dark m-1">Devices</button>
+                    <button class="btn btn-outline-dark m-1">Kitchen</button>
+                    <button class="btn btn-outline-dark m-1">Amazon Brands</button>
+                    <button class="btn btn-outline-dark m-1">Pet Suplies</button>
+                    <button class="btn btn-outline-dark m-1">Furniture</button>
+                    <button class="btn btn-outline-dark m-1">Sports & Outdoor</button>
+                    
+                </div>
+                <div class="carousel-item text-center">
+                    <button class="btn btn-outline-dark m-1">Health</button>
+                    <button class="btn btn-outline-dark m-1">Household</button>
+                    <button class="btn btn-outline-dark m-1">Kids item</button>
+                    <button class="btn btn-outline-dark m-1">Small Buisness</button>
+                    <button class="btn btn-outline-dark m-1">Amazon Phone</button>
+                    <button class="btn btn-outline-dark m-1"> Suplies</button>
+                    <button class="btn btn-outline-dark m-1">Camera</button>
+                    <button class="btn btn-outline-dark m-1">Sports & Outdoor</button>
+                    
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#dealSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#dealSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded"></span>
+            </button>
+
+        </div>
+
+
+   <!-- MAIN SECTION -->
+        <div class="container-fluid py-3">
+
+            <div class="row g-4">
+
+                <!-- SIDEBAR -->
+                <div class="col-lg-3">
+
+                    <div class="sidebar bg-info bg-opacity-50 p-3 rounded shadow-sm">
+
+                        <h5 class="fw-bold">Departments</h5>
+
+                        <div class="mb-3">
+                            <input type="radio" class="Active" name="dept">All <br>
+                            <input type="radio" name="dept"> Amazon Devices  <br>
+                            <input type="radio" name="dept"> Books <br>
+
+
+                            <input type="radio" name="dept"> Electronics <br>
+                            <input type="radio" name="dept"> Fashion <br>
+                            <input type="radio" name="dept"> Art, Crafts<br>
+
+
+
+                            <div class="collapse" id="moreDept">
+                                <input type="radio" name="dept"> Beauty <br>
+                                <input type="radio" name="dept"> Gaming <br>
+                                <input type="radio" name="dept"> Furniture <br>
+                                <input type="radio" name="dept"> Amazon Luxury <br>
+                                <input type="radio" name="dept"> Fashion <br>
+                                <input type="radio" name="dept"> Brands <br>
+
+                                <input type="radio" name="dept"> Phone<br>
+                                <input type="radio" name="dept"> store <br>
+                                <input type="radio" name="dept"> Sewing <br>
+                            </div>
+
+
+                        </div>
+
+                        <button class="btn btn-link p-0 mb-3" data-bs-toggle="collapse" data-bs-target="#moreDept">
+                            Show More
+                        </button>
+
+                        <h5 class="fw-bold">Brands</h5>
+
+                        <div class="mb-3">
+                            <input type="checkbox"> Amazon <br>
+                            <input type="checkbox"> Asus <br>
+                            <input type="checkbox"> AMD <br>
+                            <input type="checkbox"> Puma <br>
+                        </div>
+
+                        <div class="collapse" id="moreBrands">
+                            <input type="checkbox"> Apple <br>
+                            <input type="checkbox"> Sony <br>
+                            <input type="checkbox"> LG <br>
+                            <input type="checkbox"> Samsung <br>
+                            <input type="checkbox"> Leviot <br>
+                            <input type="checkbox">Shark <br>
+                            <input type="checkbox"> Laptop <br>
+                            <input type="checkbox"> Bissel <br>
+                            <input type="checkbox"> Ryzen<br>
+                        </div>
+
+                        <button class="btn btn-link p-0 mb-3" data-bs-toggle="collapse" data-bs-target="#moreBrands">
+                            Show More
+                        </button>
+
+
+                        <h6 class="text-dark fw-bold">Customer Reviews</h6>
+
+                        <!-- Always visible -->
+                        <div>
+                            <input type="radio" name="Departments"> All <br>
+                            <input type="radio" name="Departments"> 
+                             <i class="bi bi-star-fill"></i>
+                             <i class="bi bi-star-fill"></i>
+                             <i class="bi bi-star-fill"></i>
+                             <i class="bi bi-star-half"></i>
+                             <i class="bi bi-star-half"></i><br>
+
+                        </div>
+                        <div class="collapse" id="moreBrands">
+                            <input type="radio" name="Departments">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                           <i class="bi bi-star-half"></i>
+                           <i class="bi bi-star-half"></i>
+                            <br>
+                            <input type="radio" name="Departments"> 
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i> <br>
+                            <input type="radio" name="Departments"> 
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                             <br>
+                            <input type="radio" name="Departments"> 
+                            <i class="bi bi-star-fill"></i> <br>
+                        </div>
+
+                        <!-- Toggle Button -->
+                        <button class="btn btn-link p-0" data-bs-toggle="collapse" data-bs-target="#moreBrands">
+                            Show more
+                        </button>
+                        <!-- Price -->
+                        <div class="range-box mt-2">
+
+                            <h6 class="fw-bold">Price</h6>
+
+                            <p class="fs fw-bold">$0 - $3000</p>
+
+                            <input type="range" class="form-range">
+
+                        </div>
+
+                        <!-- Discount -->
+                        <div class="range-box mb-4">
+
+                            <h6 class="fw-bold">Discount</h6>
+
+                            <p class="fs fw-bold">0% - 100%</p>
+
+                            <input type="range" class="form-range">
+
+                        </div>
+
+                        <h6 class="fw-bold">Prime Programs</h6>
+
+                        <div class="mb-3">
+                            <input type="checkbox">Prime Exclusive <br>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- PRODUCTS -->
+                <div class="col-lg-9">
+                    <!-- caresoul for the products card here -->
+                    <div class="container bg-success bg-opacity-25 my-5 px-5  mt-3">
+                        <div class="row g-4">
+                                <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+           <div class="row g-2">
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-3">
+
+                        <div class="card product-card bg-light" style="height: 250px;width: 200px;">
+
+                            <img src="images/1.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-3">
+
+                        <div class="card product-card bg-light " style="height: 250px;width: 200px;">
+
+                            <img src="images/2.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-3">
+
+                        <div class="card product-card bg-light " style="height: 250px;width: 200px;">
+
+                            <img src="images/3.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-3">
+
+                        <div class="card product-card bg-light" style="height: 250px;width: 200px;">
+
+                            <img src="images/4.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <div class="carousel-item">
+           <div class="row g-2">
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-3">
+
+                        <div class="card product-card bg-light" style="height: 250px;width: 200px;">
+
+                            <img src="images/5.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-3">
+
+                        <div class="card product-card bg-light " style="height: 250px;width: 200px;">
+
+                            <img src="images/6.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-3">
+
+                        <div class="card product-card bg-light " style="height: 250px;width: 200px;">
+
+                            <img src="images/7.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-3">
+
+                        <div class="card product-card bg-light" style="height: 250px;width: 200px;">
+
+                            <img src="images/8.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <div class="carousel-item">
+           <div class="row g-2">
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-3">
+
+                        <div class="card product-card bg-light" style="height: 250px;width: 200px;">
+
+                            <img src="images/9.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-3">
+
+                        <div class="card product-card bg-light " style="height: 250px;width: 200px;">
+
+                            <img src="images/10.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-3">
+
+                        <div class="card product-card bg-light " style="height: 250px;width: 200px;">
+
+                            <img src="images/11.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-3">
+
+                        <div class="card product-card bg-light" style="height: 250px;width: 200px;">
+
+                            <img src="images/12.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+                        </div>
+                    </div>
+                    
+
+                      <div class="row g-2">
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/13.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/14.png" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/15.png" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/16.png" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-2">
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/17.png" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/18.png" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/19.webp" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/20.webp" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/21.webp " class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/10.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/15.png" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/8.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/22.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/8.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/10.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/4.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/5.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/7.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/22.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/1.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/2.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/23.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/12.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="image/art.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   <div class="row g-2">
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/14.png" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/24.png" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/13.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/1.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/25.png" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/26.webp" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/11.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/20.webp" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/5.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/28.webp" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/10.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/22.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/13.jpg" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/29.webp" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/17.png" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+
+                        <div class="card product-card " style="height: 250px;width: 200px;">
+
+                            <img src="images/19.webp" class="product-img" style="height: 100px;" alt="">
+
+                            <div class="plus-btn" data-bs-toggle="modal" data-bs-target="#productModal">
+                                +
+                            </div>
+
+                            <div class="card-body">
+
+                                <span class="discount-badge">50% off
+                                </span>
+                                <small class="text-danger fw-bold">
+                                    Limited time deal
+                                </small>
+
+
+                                <span><sup class="superscript">$</sup>399<sup class="superscript">99</sup></span>
+                                <small class="text-muted">list:</small>
+                                <span class="text-decoration-line-through text-muted small">$799.99</span>
+
+                                <p>Shark Stratos 2-in-1 Robot Vacuum & Mop</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                </div>
+            </div>
+
+        </div>
+
+           <!-- FOOTER -->
+        <!-- Back To Top -->
+        <div class="top-footer">
+            <a href="#">Back to top</a>
+        </div>
+
+        <!-- Main Footer -->
+        <div class="main-footer">
+            <div class="container">
+                <div class="row ">
+
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Get to Know Us</h5>
+
+                        <ul>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About Amazon</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Amazon Devices</a></li>
+                            <li><a href="#">Amazon Science</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Make Money with Us</h5>
+
+                        <ul>
+                            <li><a href="#">Sell products on Amazon</a></li>
+                            <li><a href="#">Sell on Amazon Business</a></li>
+                            <li><a href="#">Sell apps on Amazon</a></li>
+                            <li><a href="#">Become an Affiliate</a></li>
+                            <li><a href="#">Advertise Your Products</a></li>
+                            <li><a href="#">Self-Publish with Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Amazon Payment Products</h5>
+
+                        <ul>
+                            <li><a href="#">Amazon Business Card</a></li>
+                            <li><a href="#">Shop with Points</a></li>
+                            <li><a href="#">Reload Your Balance</a></li>
+                            <li><a href="#">Amazon Currency Converter</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Let Us Help You</h5>
+
+                        <ul>
+                            <li><a href="#">Amazon and COVID-19</a></li>
+                            <li><a href="#">Your Account</a></li>
+                            <li><a href="#">Your Orders</a></li>
+                            <li><a href="#">Shipping Rates & Policies</a></li>
+                            <li><a href="#">Returns & Replacements</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Foot-->
+
+        <div class="footer-middle">
+            <div class="container">
+
+                <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+
+                    <div class="footer-logo">
+                        <img src="images/logo.webp" class="img-fluid" alt="Amazon Logo"
+                            style="height: 40px; width: 80px;">
+                    </div>
+
+                    <button class="footer-btn">
+                        <i class="bi bi-globe"></i> English
+                    </button>
+
+                    <button class="footer-btn">
+                        $ USD - U.S. Dollar
+                    </button>
+
+                    <button class="footer-btn">
+                        <i class="bi bi-flag"></i> United States
+                    </button>
+
+                </div>
+
+            </div>
+            </section><br>
+
+            <!-- Bottom Footer -->
+            <footer class="amazon-footer ms-auto">
+                <div class="container mx-auto ms-auto p-2 g-1">
+                    <div class="row g-1">
+
+                        <!-- Column 1 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Amazon Music</a></li>
+                                <li><a href="#">Stream millions <br>of songs</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Amazon Ads</a></li>
+                                <li><a href="#">Reach customers <br>wherever they<br>spend thier time</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">6pm</a></li>
+                                <li><a href="#">Score deals<br>on fashion brands</a> </a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 4 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">AbeBooks</a></li>
+                                <li><a href="#">Books,art<br>&collection</a> </a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 5 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">ACX</a></li>
+                                <li><a href="#">Audio<br>Publishing<br>Made easy</a> </a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 6 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Sell on Amazon</a></li>
+                                <li><a href="#">Start a Selling <br>Account</a> </a></li>
+                            </ul>
+                        </div>
+
+                        <!-- column 7 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Amazon Buisness</a></li>
+                                <li><a href="#">Everything For <br>Your Business</a> </a></li>
+                            </ul>
+                        </div>
+
+                        <!-- column 8 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Amazon Web Services</a></li>
+                                <li><a href="#">Scalable Cloud<br>Computing <br>Services</a> </a></li>
+                            </ul>
+                        </div>
+                        <!-- column-9 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Amazon Global</a></li>
+                                <li><a href="#">Ship Orders<br>Internationaly</a> </a></li>
+                            </ul>
+                        </div>
+                        <!-- columns-10 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Audible</a></li>
+                                <li><a href="#">Listen to Books &<br>Original <br>Audio<br>Performance</a> </a></li>
+                            </ul>
+                        </div>
+                        <!-- columns-11 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Box Office Mojo</a></li>
+                                <li><a href="#">Find Movie<br>Box Office Data</a> </a></li>
+                            </ul>
+                        </div>
+                        <!-- columns-12 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Goodreads</a></li>
+                                <li><a href="#">Book reviews<br>&<br>recommendations</a> </a></li>
+                            </ul>
+                        </div>
+                        <!-- columns-13 -->
+                        <!-- columns-14 -->
+                        <!-- columns-15 -->
+                        <!-- columns-16 -->
+                        <!-- columns-17 -->
+
+
+                        <hr class="footer-divider">
+
+                        <!-- Bottom links -->
+                        <div class="row text-center bottom-footer">
+                            <div class="col-md-12">
+                                <ul class="footer-links">
+                                    <li><a href="#">Conditions of Use</a></li>
+                                    <li><a href="#">Privacy Notice</a></li>
+                                    <li><a href="#">Consumer Health Data Privacy Disclosure</a></li>
+                                    <li><a href="#">Your Ads Privacy Choices</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-12 text center copyright">
+                                <p>© 1996-2026, Amazon.com, Inc. or its affiliates</p>
+                            </div>
+                        </div>
+
+                    </div>
+            </footer>
+
+                <!-- OFFCANVAS -->
+            <div class="offcanvas offcanvas-start" id="menuCanvas">
+
+                <div class="offcanvas-header bg-dark  text-white">
+                    <h5 class="bi bi-person-square p-2">
+                        <a href="contact.html" target="_blank">Hello, Sign in</a>
+                    </h5>
+
+                    <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body ps-5">
+                    <a href="#" class="d-block mb-2">All</a>
+                    <a href="#" class="d-block mb-2" >Camera</a>
+                    <a href="#" class="d-block mb-2" >Monitor</a>
+                    <a href="#" class="d-block mb-2" >Pet Food</a>
+                    <a href="#" class="d-block mb-2">Home & Kitchen</a>
+                    <a href="#" class="d-block mb-2" >Laotop</a>
+                    <a href="#" class="d-block mb-2">Microwave Oven</a>
+                    <a href="#" class="d-block mb-2" >Blender</a>
+                    <a href="#" class="d-block mb-2" >Rice Cooker</a>
+                    <a href="#" class="d-block mb-2">Air Conditionem</a> p-2
+                    <a href="#" class="d-block mb-2" >Refrigerator</a>
+                    <a href="#" class="d-block mb-2">Air Conditioner</a>
+                    <a href="#" class="d-block mb-2" >Smart Watch</a>
+                    <a href="#" class="d-block mb-2">Amazon Devices</a>
+                    <a href="#" class="d-block mb-2" >Vacuum Cleaner</a>
+                    <a href="#" class="d-block mb-2">Fashion</a>
+                    <a href="#" class="d-block mb-2">Gaming</a>
+                    <a href="#" class="d-block mb-2">Books</a>
+                    <a href="#" class="d-block mb-2">Art</a>
+                    <a href="#" class="d-block mb-2">Lg</a>
+                    <a href="#" class="d-block mb-2">t-shirt</a>
+                    <a href="#" class="d-block mb-2">AMD</a>
+                    <a href="#" class="d-block mb-2">Amazon Brand</a>
+                    <a href="#" class="d-block mb-2">Amazon Mobile</a>
+                </div>
+            </div>
+
+
+               <!-- MODAL -->
+            <div class="modal fade modal-right" id="productModal">
+
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title">Product Details</h5>
+
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body">
+
+                          <!-- CARD -->
+               <div class="row nt-3">
+                <div class="col-6">
+                    <img src="image/art.jpg" class="img-fluid" style="height: 200px; width: 200px;" alt="">
+
+                       <p>Product description will go here.</p>
+                </div>
+                <div class="col-6">
+                    <img src="image/car.jpg" class="img-fluid" style="height: 200px; width: 200px;" alt="">
+
+                       <p>Product description will go here.</p>
+                </div>
+               </div>
+               <div class="row nt-3">
+                <div class="col-6">
+                    <img src="images/sofa.jpg" class="img-fluid" style="height: 200px; width: 200px;" alt="">
+
+                       <p>Product description will go here.</p>
+                </div>
+                <div class="col-6">
+                    <img src="images/shop.jpg" class="img-fluid" style="height: 200px; width: 200px;" alt="">
+
+                       <p>Product description will go here.</p>
+                </div>
+               </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-bs-dismiss="modal">
+                                Close
+                            </button>
+
+                            <button class="btn btn-primary">
+                                Add To Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

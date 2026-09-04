@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="amzon.css">
+</head>
+<body>
+
+    <!-- TOP NAVBAR -->
+    <div class="top-nav py-2">
+        <div class="container-fluid">
+            <div class="row align-items-center g-2">
+
+                <div class="col-6 col-md-2 text-center text-md-start">
+                    <img src="images/logo.webp" class="img-fluid" style="width:80px;height:35px;" alt="logo">
+                </div>
+
+                <div class="col-12 col-md-7">
+                    <div class="input-group ">
+
+                        <button class="btn btn-light dropdown-toggle bg-secondary" data-bs-toggle="dropdown">
+                            Deals
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.amazon.com/s?k=echo+show+8&i=electronics-intl-ship&crid=C7UXMDYIQZF2&sprefix=e%2Celectronics-intl-ship%2C340&ref=nb_sb_ss_p13n-expert-pd-ops-ranker_2_1" target="_blank">Electronics</a></li>
+                            <li><a class="dropdown-item" href="https://www.amazon.com/s?k=t+-shirts&i=fashion-boys-intl-ship&crid=1YZC04EJ9LHH6&sprefix=sh%2Cfashion-boys-intl-ship%2C330&ref=nb_sb_ss_p13n-expert-pd-ops-ranker_1_2" target="_blank">Boy's Fashion</a></li>
+                            <li><a class="dropdown-item" href="https://www.amazon.com/s?k=harry+potter&i=stripbooks-intl-ship&crid=2VA19NQJWWDMM&sprefix=harr%2Cstripbooks-intl-ship%2C341&ref=nb_sb_ss_p13n-expert-pd-ops-ranker_1_4" target="_blank">Books</a></li>
+                            <li><a class="dropdown-item" href="https://www.amazon.com/s?k=pant+shirt&i=fashion-girls-intl-ship&crid=1CX5J8QX4V5SK&sprefix=pant+shirt%2Cfashion-girls-intl-ship%2C360&ref=nb_sb_noss_2" target="_blank">Women's Fashion</a></li>
+                            <li><a class="dropdown-item" href="https://www.amazon.com/s?k=kitchen+gadgets&i=kitchen-intl-ship&crid=1TLXLI0BQ8HU8&sprefix=ki%2Ckitchen-intl-ship%2C338&ref=nb_sb_ss_p13n-expert-pd-ops-ranker_2_2" target="_blank">Home & Kitchen</a></li>
+                        </ul>
+
+                        <input type="text" class="form-control" placeholder="Search Amazon">
+
+                        <button class="btn search-btn">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 text-end text-white">
+                    <small class="fw-bold">Hello, Sign in</small>
+                    <i class="bi bi-cart3 fs-4"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU BAR -->
+    <div class="menu-bar py-2">
+        <div class="container-fluid d-flex gap-3 overflow-auto">
+
+            <a href="#" class="text-white text-decoration-none" data-bs-toggle="offcanvas" data-bs-target="#menuCanvas">
+                ☰ All
+            </a>
+
+            <a href="amazon.html" target="_blank" class="text-white text-decoration-none">Today's Deals</a>
+            <a href="gift_card.html" target="_blank" class="text-white text-decoration-none">Gift Cards</a>
+            <a href="#" class="text-white text-decoration-none">Prime Video</a>
+            <a href="#" class="text-white text-decoration-none">Customer Service</a>
+            <a href="#" class="text-white text-decoration-none">Sell</a>
+            <a href="contact.html" class="text-white text-decoration-none">Registry</a>
+
+        </div>
+    </div>
+
+    <!-- menu footer -->
+    <div class="menu-footer  py-2">
+        <div class="container-fluid  d-flex gap-1 overflow-auto">
+            <span class="">Today's Deals</span>
+            <span class="">Coupons</span>
+            <span class="">Renewd Deals</span>
+            <span class="">Outlet</span>
+            <span class="">Amazon Resale</span>
+        </div>
+    </div>
+
+    <!-- CATEGORY BUTTONS -->
+    <div class="container-fluid py-3 bg-light opacity-65%">
+
+        <div id="dealSlider" class="carousel slide">
+
+            <div class="carousel-inner">
+
+                <div class="col-12 col-md-12 col-sm-12 carousel-item active text-center">
+                    <button class="btn btn-outline-dark m-1">Lightning Deals</button>
+                    <button class="btn btn-outline-dark m-1">Most Loved</button>
+                    <button class="btn btn-outline-dark m-1">Electronics</button>
+                    <button class="btn btn-outline-dark m-1">Outle</button>
+                    <button class="btn btn-outline-dark m-1">Lowest price 365 days</button>
+                    <button class="btn btn-outline-dark m-1">Premium Brands</button>
+                    <button class="btn btn-outline-dark m-1">Final Sale</button>
+                    <button class="btn btn-outline-dark m-1">Fashion</button>
+                </div>
+
+                <div class="carousel-item text-center">
+                    <button class="btn btn-outline-dark m-1">Beauty</button>
+                    <button class="btn btn-outline-dark m-1">Toys & Games</button>
+                    <button class="btn btn-outline-dark m-1">Devices</button>
+                    <button class="btn btn-outline-dark m-1">Kitchen</button>
+                    <button class="btn btn-outline-dark m-1">Amazon Brands</button>
+                    <button class="btn btn-outline-dark m-1">Pet Suplies</button>
+                    <button class="btn btn-outline-dark m-1">Furniture</button>
+                    <button class="btn btn-outline-dark m-1">Sports & Outdoor</button>
+                    
+                </div>
+                <div class="carousel-item text-center">
+                    <button class="btn btn-outline-dark m-1">Health</button>
+                    <button class="btn btn-outline-dark m-1">Household</button>
+                    <button class="btn btn-outline-dark m-1">Kids item</button>
+                    <button class="btn btn-outline-dark m-1">Small Buisness</button>
+                    <button class="btn btn-outline-dark m-1">Amazon Phone</button>
+                    <button class="btn btn-outline-dark m-1"> Suplies</button>
+                    <button class="btn btn-outline-dark m-1">Camera</button>
+                    <button class="btn btn-outline-dark m-1">Sports & Outdoor</button>
+                    
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#dealSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#dealSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded"></span>
+            </button>
+
+        </div>
+
+<!-- Live Chat with Plant Specialist start -->
+<section class="form mt-4 bg-secondary  p-5 rounded">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <h3 class="text-center text-capitalize text-white">Contact Form</h3>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="regFrom">
+                            <div class="row mb-3">
+                                <label for="name" class="col-md-3 form-label">Name</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" placeholder="Enter your name">
+                                    <span id="nameErrorText"></span>
+                                </div>
+
+                            </div>
+
+                            <div class="row mb-3">
+                                <label for="email" class="col-md-3 form-label">Email</label>
+                                <div class="col-md-9">
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                    <span id="emailErrorText"></span>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <label for="phone" class="col-md-3 form-label">Phone</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="phone" class="form-control" placeholder="Enter your phone number">
+                                    <span id="phoneErrorText"></span>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <label for="address" class="col-md-3 form-label">Address</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="address" class="form-control" placeholder="Enter your address">
+                                    <span id="addressErrorText"></span>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <label for="message" class="col-md-3 form-label">Your Message</label>
+                                <div class="col-md-9">
+                                    <textarea class="form-control" placeholder="Write your message here" rows="5"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-9">
+                                    <button type="submit" id="regButton" class="btn btn-outline-primary form-control">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div> <!-- card-body -->
+                </div> <!-- card -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Live Chat with Plant Specialist end -->
+
+
+
+<!-- Button to Open Contact Form Modal -->
+<div class="text-center my-5 bg-success rounded">
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal">
+        📩 General Enquiry
+    </button>
+</div>
+
+<!-- Contact Form Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content shadow">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="contactModalLabel">Contact Us – General Enquiry</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <form>
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+
+                    <!-- Message -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" rows="4"
+                                  placeholder="Type your message here..."></textarea>
+                    </div>
+
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-success">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- FOOTER -->
+        <!-- Back To Top -->
+        <div class="top-footer">
+            <a href="#">Back to top</a>
+        </div>
+
+        <!-- Main Footer -->
+        <div class="main-footer">
+            <div class="container">
+                <div class="row ">
+
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Get to Know Us</h5>
+
+                        <ul>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About Amazon</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Amazon Devices</a></li>
+                            <li><a href="#">Amazon Science</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Make Money with Us</h5>
+
+                        <ul>
+                            <li><a href="#">Sell products on Amazon</a></li>
+                            <li><a href="#">Sell on Amazon Business</a></li>
+                            <li><a href="#">Sell apps on Amazon</a></li>
+                            <li><a href="#">Become an Affiliate</a></li>
+                            <li><a href="#">Advertise Your Products</a></li>
+                            <li><a href="#">Self-Publish with Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Amazon Payment Products</h5>
+
+                        <ul>
+                            <li><a href="#">Amazon Business Card</a></li>
+                            <li><a href="#">Shop with Points</a></li>
+                            <li><a href="#">Reload Your Balance</a></li>
+                            <li><a href="#">Amazon Currency Converter</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Let Us Help You</h5>
+
+                        <ul>
+                            <li><a href="#">Amazon and COVID-19</a></li>
+                            <li><a href="#">Your Account</a></li>
+                            <li><a href="#">Your Orders</a></li>
+                            <li><a href="#">Shipping Rates & Policies</a></li>
+                            <li><a href="#">Returns & Replacements</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Foot-->
+
+        <div class="footer-middle">
+            <div class="container">
+
+                <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+
+                    <div class="footer-logo">
+                        <img src="images/logo.webp" class="img-fluid" alt="Amazon Logo"
+                            style="height: 40px; width: 80px;">
+                    </div>
+
+                    <button class="footer-btn">
+                        <i class="bi bi-globe"></i> English
+                    </button>
+
+                    <button class="footer-btn">
+                        $ USD - U.S. Dollar
+                    </button>
+
+                    <button class="footer-btn">
+                        <i class="bi bi-flag"></i> United States
+                    </button>
+
+                </div>
+
+            </div>
+            </section><br>
+
+            <!-- Bottom Footer -->
+            <footer class="amazon-footer ms-auto">
+                <div class="container mx-auto ms-auto p-2 g-1">
+                    <div class="row g-1">
+
+                        <!-- Column 1 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Amazon Music</a></li>
+                                <li><a href="#">Stream millions <br>of songs</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Amazon Ads</a></li>
+                                <li><a href="#">Reach customers <br>wherever they<br>spend thier time</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">6pm</a></li>
+                                <li><a href="#">Score deals<br>on fashion brands</a> </a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 4 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">AbeBooks</a></li>
+                                <li><a href="#">Books,art<br>&collection</a> </a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 5 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">ACX</a></li>
+                                <li><a href="#">Audio<br>Publishing<br>Made easy</a> </a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 6 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Sell on Amazon</a></li>
+                                <li><a href="#">Start a Selling <br>Account</a> </a></li>
+                            </ul>
+                        </div>
+
+                        <!-- column 7 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Amazon Buisness</a></li>
+                                <li><a href="#">Everything For <br>Your Business</a> </a></li>
+                            </ul>
+                        </div>
+
+                        <!-- column 8 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Amazon Web Services</a></li>
+                                <li><a href="#">Scalable Cloud<br>Computing <br>Services</a> </a></li>
+                            </ul>
+                        </div>
+                        <!-- column-9 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Amazon Global</a></li>
+                                <li><a href="#">Ship Orders<br>Internationaly</a> </a></li>
+                            </ul>
+                        </div>
+                        <!-- columns-10 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Audible</a></li>
+                                <li><a href="#">Listen to Books &<br>Original <br>Audio<br>Performance</a> </a></li>
+                            </ul>
+                        </div>
+                        <!-- columns-11 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Box Office Mojo</a></li>
+                                <li><a href="#">Find Movie<br>Box Office Data</a> </a></li>
+                            </ul>
+                        </div>
+                        <!-- columns-12 -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+
+                            <ul>
+                                <li><a class="fw-bold" href="#">Goodreads</a></li>
+                                <li><a href="#">Book reviews<br>&<br>recommendations</a> </a></li>
+                            </ul>
+                        </div>
+                        <!-- columns-13 -->
+                        <!-- columns-14 -->
+                        <!-- columns-15 -->
+                        <!-- columns-16 -->
+                        <!-- columns-17 -->
+
+
+                        <hr class="footer-divider">
+
+                        <!-- Bottom links -->
+                        <div class="row text-center bottom-footer">
+                            <div class="col-md-12">
+                                <ul class="footer-links">
+                                    <li><a href="#">Conditions of Use</a></li>
+                                    <li><a href="#">Privacy Notice</a></li>
+                                    <li><a href="#">Consumer Health Data Privacy Disclosure</a></li>
+                                    <li><a href="#">Your Ads Privacy Choices</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-12 text center copyright">
+                                <p>© 1996-2026, Amazon.com, Inc. or its affiliates</p>
+                            </div>
+                        </div>
+
+                    </div>
+            </footer>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
